@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Anton Sokolov</title>
+	<meta name="description" content="Passionate philosopher, excited entrepreneur.">
+	<meta name="author" content="Anton Sokolov">
+
+	<!-- Favicons -->
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
+	<link href="https://use.fontawesome.com/releases/v5.0.2/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+	<!-- Stylesheet -->
+	<link rel="stylesheet" type="text/css"  href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="wrap">
+	<img class="mugshot" src="img/1.png"/>
+	<h2>Anton Sokolov</h2>
+	<h3>Passionate philosopher, excited entrepreneur.</h3>
+	<ul class="contacts">
+		<li><button class="icon" id="copyButton" data-clipboard-text="anton@ekselsio.com"><i class="fas fa-envelope-square"></i></button></li>
+		<li><a href="https://www.linkedin.com/in/an-sokolov/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+		<li><button class="icon" id="copyButton" data-clipboard-text="+358465702511"><i class="fas fa-phone-square"></i></button></li>
+	</ul>
+</div>	 
+
+<script src="https://cdn.jsdelivr.net/clipboard.js/1.5.3/clipboard.min.js"></script>
+<script>
+		var clipboard = new Clipboard('#copyButton');
+	clipboard.on('success', function(e) {
+		console.log(e);
+	});
+	clipboard.on('error', function(e) {
+	console.log(e);
+	});
+</script>
+</body>
+</html>
