@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Anton Sokolov</title>
+	<link rel="icon" type="image/png" href="img/thumbnail.png">
+	<meta name="description" content="Passionate philosopher, excited entrepreneur.">
+	<meta name="author" content="Anton Sokolov">
+
+	<!-- Favicons -->
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
+	<link href="https://use.fontawesome.com/releases/v5.0.2/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+	<!-- Stylesheet -->
+	<link rel="stylesheet" type="text/css"  href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700" rel="stylesheet">
+
+</head>
+<body>
+
+	<!-- MENU -->
+	<div id="menu" class="menu">
+		<ul class="box-border">
+			<li><a href="#about"><p>about</p></a></li>
+			<li><a href="#strength"><p>strengths</p></a></li>
+			<li><img class="thumbnail" src="img/thumbnail.png"/></li>
+			<li><a href="#portfolio"><p>portfolio</p></a></li>
+			<li><a href="#contact"><p>contact</p></a></li>
+		</ul>
+	</div>
+
+	<!-- HOME -->
+	<div id="home" class="section">
+		<div class="wrap">
+			<h1 class="text-border first">ANTON</h1>
+			
+			<h1 class="text-border">SOKOLOV</h1>
+			<div class="profession">
+				<p>ENTREPRENEUR</p>
+				<p>*</p>
+				<p>BUSINESS DEVELOPER</p>
+				<p>*</p>
+				<p>PROJECT MANAGER</p>
+			</div>
+			<div class="links">
+				<button class="icon" id="copyButton" title="Click to copy email address" data-clipboard-text="anton@ekselsio.com"><i class="fas fa-envelope-square"></i></button>
+				<a href="https://www.linkedin.com/in/an-sokolov/" target="_blank"><i class="fab fa-linkedin"></i></a>
+				<button class="icon" id="copyButton" title="Click to copy phone number" data-clipboard-text="+358465702511"><i class="fas fa-phone-square"></i></button>
+				<a href="https://www.github.com/ansokolov" target="_blank"><i class="fab fa-github-square"></i></a>
+			</div>
+		</div>		
+	</div>
+
+	<!-- ABOUT -->
+	<div id="about" class="section">
+		<div class="wrap">
+			<h2 class="text-border">ABOUT ME:</h2>
+			<div class="col-2">
+				<img class="mugshot" src="img/anton.png"/>
+			</div>
+			<div class="col-2 motivation">
+					<p>I have an unstoppable passion for optimization of business processes and truly believe that by structuring power of project management tools companies can achieve effectiveness and efficiency for activities of any scope and sizes.</p>
+					<br>
+					<p>By being an adept of new technology, I never underestimate the benefits of traditionally accepted methods. Thus, I seek to optimize the performance when needed and switch to a new system when absolutely necessary. Such approach allows me to be economical in my judgment and productive in execution.</p>				
+			</div>
+		</div>
+	</div>
+
+	<!-- KEY STRENGTHS -->
+	<div id="strength" class="section">
+		<div class="wrap">
+			<div class="center">
+			<h2 class="text-border">KEY STRENGTHS:</h2>
+			<div class="listSkills">
+				<img class="flipped arm" src="img/arm.png">
+				<ul>
+					<li>Copywriting</li>
+					<li>Interpersonal communication</li>
+					<li>Public speaking and presentation skills</li>
+					<li>Self-sufficient developer in Python and web design (HTML5, CSS3, JS)</li>
+					<li>Skillful designer with confident skills in Photoshop and Hitfilm</li>
+				</ul>
+				<img class="arm" src="img/arm.png">
+			</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- PORTFOLIO -->
+	<div id="portfolio" class="section">
+		<div class="wrap">
+			<h2 class="text-border">PORTFOLIO:</h2>
+			<div class="materials">
+			<h3>Publications:</h3>
+			<ul>
+				<li><a href="https://www.researchgate.net/publication/321887458_Business-to-business_advertising_in_social_media">Thesis</a></li>
+				<li><a href="http://www.turiba.lv/f/Branding_In_SM_for_dessert_cafes_in_Riga_Latvia_-_SOKOLOV.pdf">Research</a></li>
+				<li><a href="https://www.researchgate.net/publication/321198026_The_Future_of_the_Arctic_Region">Essay</a></li>
+			</ul>
+			<h3>Design:</h3>
+			<ul>
+				<li><a>Website</a></li>
+				<li><a>Graphic</a></li>
+			</ul>
+			<h3>Code:</h3>
+			<ul>
+				<li><a href="https://github.com/ansokolov/facebook-invite">Python</a></li>
+				<li><a href="https://github.com/ansokolov/content-ideas">Javascript</a></li>
+			</ul>
+		</div>
+			<img class="notepad" src="img/notepad.png">
+		</div>
+	</div>
+
+	<!-- CONTACT -->
+	<div id="contact" class="section">
+		<div class="wrap">
+		<div class="postcard box-border">
+			<div class="contact-form">
+				<form method="POST" action="https://formspree.io/anton-sokolov@outlook.com">
+					<textarea id="message" class="message" name="message" placeholder="You can write here.."></textarea>
+				
+					<div class="container">
+
+						<div class="input">
+							<input type="text" id="fname" name="firstname" placeholder="NAME">
+							<input type="email" id="email" name="email" placeholder="EMAIL">
+							<select id="subject" name="subject" default="SUBJECT">
+								<option value="contact">OFFERS</option>
+								<option value="employement">EMPLOYEMENT</option>
+							</select>
+				
+							<input class="button" type="submit" value="SEND">
+						</div>
+					</div>
+				</form>
+
+			</div>
+
+		</div>
+		<div id="date"></div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		var menu=document.getElementById("menu");
+		var about=document.getElementById("about");
+		(window).onscroll = function(){
+	
+			if(document.documentElement.scrollTop>=about.offsetTop)
+			{
+				menu.style.display="block"
+			} else {
+				menu.style.display="none"
+			}
+
+		};
+	</script>
+
+	<script>
+        var d = new Date();
+        document.getElementById("date").innerHTML = "© " + d.getFullYear(); 
+    </script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</body>
+</html>
