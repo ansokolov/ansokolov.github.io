@@ -1,0 +1,142 @@
+:root {
+    --colour-grey: #54547e;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    color: var(--colour-grey);
+}
+
+hr {
+    opacity: 0.3;
+    border-top: dotted 3px;
+    width: 100%;
+    grid-column-start: third;
+    grid-column-end: span fifth;    
+    grid-row-start: span second;
+    margin: 3px;
+}
+
+h3 {    
+    color: white;
+}
+
+a {
+    color: var(--colour-grey);
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color: black;
+    font-weight:600;
+    text-decoration: underline;
+}
+
+#nav {
+    background: #212223;
+}
+
+.picture {
+    width: 245px;
+}
+
+.page {
+    display: grid;
+    grid-template-columns: [first] 20% [second] 20% [third] 20% [fourth] 20% [fifth] 20% [sixth];
+    grid-template-rows: [first] 20% [second] 20% [third] 20% [fourth] 20% [fifth] 20%;
+}
+
+.logo {
+    grid-column-start: second;
+    grid-column-end: span third;
+}
+
+.heading {
+    grid-column-start: second;
+    grid-column-end: span third;
+    color: black;
+    font-weight: 600;
+}
+
+.description {
+    grid-column-start: fourth;
+    grid-column-end: span fifth;
+}
+
+section {
+    grid-column-start: third;
+    grid-column-end: span fifth;
+}
+
+.copyright {
+    grid-column-start: third;
+    grid-column-end: span fifth;
+}
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border: 1px dotted black;
+    padding: 1px 2px;
+    border-radius: 25%;
+    -webkit-border-radius: 25%;
+    -moz-border-radius: 25%;
+    -ms-border-radius: 25%;
+    -o-border-radius: 25%;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 245px;
+    background-color: #212223;
+    color: #fff;
+    text-align: center;
+    padding: 15px 20px;
+    border-radius: 6px;
+    top: -5px;
+    left: 200%; 
+    position: absolute;
+    z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+@media (max-width:640px) {
+    .page {
+        display: grid;
+        grid-template-columns: [first] 5% [second] 10% [third] auto [fourth] 10% [fifth] 5% [sixth];
+        grid-template-rows: [first] 20% [second] 20% [third] 20% [fourth] 20% [fifth] 20%;
+    }
+    
+    .heading, .logo {
+        grid-column-end: span second;
+    }
+
+    section {
+        font-size: 18px;
+    }
+    
+    .description {
+        font-weight: 200;
+        font-size: 20px;
+        margin: -10px 0 10px 0;
+        grid-column-start: second;
+    }
+
+    .copyright {
+        grid-column-start: second;
+        font-size: 14px;
+    }
+
+    .tooltip {
+        display:none;
+    }
+}

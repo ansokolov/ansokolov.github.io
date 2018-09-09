@@ -1,142 +1,137 @@
-:root {
-    --colour-grey: #54547e;
-}
-
 body {
-    padding: 0;
-    margin: 0;
-    width: 100vw;
-    height: 100vh;
-    color: var(--colour-grey);
-}
-
-hr {
-    opacity: 0.3;
-    border-top: dotted 3px;
     width: 100%;
-    grid-column-start: third;
-    grid-column-end: span fifth;    
-    grid-row-start: span second;
-    margin: 3px;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: Raleway, sans-serif;
+    background: rgb(250, 250, 142);
+    display: flex;
+    flex-direction: row;
 }
 
-h3 {    
-    color: white;
-}
-
-a {
-    color: var(--colour-grey);
-    text-decoration: none;
-}
-
-a:hover, a:active {
-    color: black;
-    font-weight:600;
-    text-decoration: underline;
-}
-
-#nav {
-    background: #212223;
-}
-
-.picture {
-    width: 245px;
-}
-
-.page {
-    display: grid;
-    grid-template-columns: [first] 20% [second] 20% [third] 20% [fourth] 20% [fifth] 20% [sixth];
-    grid-template-rows: [first] 20% [second] 20% [third] 20% [fourth] 20% [fifth] 20%;
+nav {
+    width: 20%;
+    height: 100%;
+    font-size: 14px;
+    position: fixed;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-right: 2px dashed black;
 }
 
 .logo {
-    grid-column-start: second;
-    grid-column-end: span third;
+    width: 80%;
+    margin: 0 auto;
 }
 
-.heading {
-    grid-column-start: second;
-    grid-column-end: span third;
-    color: black;
+a {
+    text-decoration: none;
+    color: grey;
+}
+
+a:hover {
+    color: tomato;
     font-weight: 600;
 }
 
-.description {
-    grid-column-start: fourth;
-    grid-column-end: span fifth;
+li {
+    list-style-type: none;
+    margin: 8px 0;
 }
 
-section {
-    grid-column-start: third;
-    grid-column-end: span fifth;
+.content {
+    width: 80%;
+    margin: 0 0 0 20%;
 }
 
-.copyright {
-    grid-column-start: third;
-    grid-column-end: span fifth;
+.page {
+    height: 100vh;
 }
 
-/* Tooltip container */
-.tooltip {
-    position: relative;
+.about section {
+    width: 42%;
+    padding: 35% 0 0 50%;
+}
+
+.services section {
+    width: 450px;
+    padding: 350px 0 0 150px;
+}
+
+.title {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.recommendations section {
+    width: 100%;
+}
+
+.recommendations section .title {
+    padding: 15% 0 0 50%;
+}
+
+.reviews {
+    white-space: nowrap;
+    overflow-x: scroll; 
+    width: 100%;   
+    height: 100%;
+}
+
+.reviews div {
+    white-space: normal;
+    width: 20%;
+    margin: 0 30px; 
     display: inline-block;
-    border: 1px dotted black;
-    padding: 1px 2px;
-    border-radius: 25%;
-    -webkit-border-radius: 25%;
-    -moz-border-radius: 25%;
-    -ms-border-radius: 25%;
-    -o-border-radius: 25%;
 }
 
-/* Tooltip text */
-.tooltip .tooltiptext {
-    visibility: hidden;
-    width: 245px;
-    background-color: #212223;
-    color: #fff;
+
+.contact-form section {
+    width: 40%;
+    margin: 0 auto;
+    padding: 150px;
     text-align: center;
-    padding: 15px 20px;
-    border-radius: 6px;
-    top: -5px;
-    left: 200%; 
-    position: absolute;
-    z-index: 1;
 }
 
-/* Show the tooltip text when you mouse over the tooltip container */
-.tooltip:hover .tooltiptext {
-    visibility: visible;
+.contact-form form {
+    display: flex;
+    flex-direction: column;
 }
 
-@media (max-width:640px) {
-    .page {
-        display: grid;
-        grid-template-columns: [first] 5% [second] 10% [third] auto [fourth] 10% [fifth] 5% [sixth];
-        grid-template-rows: [first] 20% [second] 20% [third] 20% [fourth] 20% [fifth] 20%;
-    }
-    
-    .heading, .logo {
-        grid-column-end: span second;
-    }
+.contact-form form input, select, textarea {
+    outline: none;
+    font-family: inherit; 
+    color: gray;
+    padding: 5px;
+    height: 25px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid black;
+    margin: 5px 0 0;
+    width: 100%;
+    font-size: 14px;    
+}
 
-    section {
-        font-size: 18px;
-    }
-    
-    .description {
-        font-weight: 200;
-        font-size: 20px;
-        margin: -10px 0 10px 0;
-        grid-column-start: second;
-    }
+.contact-form form textarea {
+    height: 150px;  
+}
 
-    .copyright {
-        grid-column-start: second;
-        font-size: 14px;
-    }
+.contact-form form select {
+    padding: 1px;
+    color: gray;
+    height: 35px;
+}
 
-    .tooltip {
-        display:none;
-    }
+.contact-form form input[type="submit"] {
+    margin: 10px auto;
+    height: 35px;
+    width: 100px;
+    border: 1px solid black;
+}
+
+input[type="submit"]:hover {
+    background: tomato;
+    color: white;
 }
