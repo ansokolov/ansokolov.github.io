@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Raleway, sans-serif;
-    background: rgb(250, 250, 142);
+    background: rgb(226, 226, 226);
     display: flex;
     flex-direction: row;
 }
@@ -26,14 +26,19 @@ nav {
     margin: 0 auto;
 }
 
-a {
-    text-decoration: none;
+.copyrights {
     color: grey;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 a:hover {
-    color: tomato;
-    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color: tomato;
+    -moz-text-decoration-color: tomato;
 }
 
 li {
@@ -50,14 +55,23 @@ li {
     height: 100vh;
 }
 
+.about {
+    background-image: url(../img/about.jpg);
+}
+
 .about section {
     width: 42%;
     padding: 35% 0 0 50%;
 }
 
+.services {
+    background-image: url(../img/service.jpg);
+    background-position: bottom;
+}
+
 .services section {
     width: 450px;
-    padding: 350px 0 0 150px;
+    padding: 200px 0 500px 250px;
 }
 
 .title {
@@ -87,6 +101,11 @@ li {
     display: inline-block;
 }
 
+.contact-form {
+    background-image: url(../img/contact.jpg);
+    background-size: contain;
+    background-position: bottom;
+}
 
 .contact-form section {
     width: 40%;
